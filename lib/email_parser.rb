@@ -4,8 +4,14 @@
 # or whitespace (' ').
 class EmailParser
 
-  def parse(string)
-    string
+  attr_reader :string
+
+  def initialize(string)
+    @string = string
+  end
+
+  def parse
+    @string
   end
 
 end
